@@ -27,7 +27,7 @@ jobs:
 
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-    - name: Build and Push Docker
+    - name: Attempt to Build and Push Docker
       uses: mr-smithers-excellent/docker-build-push@4
       with:
         image: farhanuzzaman/timeteacher
